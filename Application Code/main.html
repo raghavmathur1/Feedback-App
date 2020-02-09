@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Feedback Web App
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	<div class="search">
+		<div class="heading">
+				FEEDBACKS
+			</div>
+		<div class="question qedit">
+			<div class="cont">
+				<div class="qs">Enter Faculty ID To See Feedback</div>
+				<input type="number" name="Fid" class="textinput">
+			</div>
+			<div class="note">Enter 1 to see all feedbacks</div>
+		</div>
+
+		<input type="button" name="" value="Submit" class="submit">
+	</div>
+
+	<div class="data">
+	<!-- 	<div class="feedback">
+			<div class="name">RAGHAV</div>
+			<div class="section">Section J &#8226  Maths</div>
+			<div class="line"></div>
+			<div class="align quality">
+				Quality of Teaching: <div class="circ">1</div>
+			</div>
+			<div class="align doubts">
+				Quality of Clearing Doubts: <div class="circ">1</div>
+			</div>	
+			<div class="align problems">
+				Quality of Problems: <div class="circ">1</div>
+			</div>
+
+			<div class="other">
+				<div class="f">Other Problems:</div>
+				 <div class="text">
+				 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				 	consequat.
+				 </div>
+			</div>
+		</div> -->
+	</div>
+
+
+	<script type="text/javascript">
+		$("input[type='button']").click(function(){
+			$(".data").empty()
+			value = $("input[name='Fid']").val();
+			var i = localStorage.getItem("i");
+			for(x = 0; x < i; x++){
+				var t = JSON.parse(localStorage.getItem("totalData"+x));
+				if (t[7]==value || value == 1) {
+					var large = '<div class="feedback"><div class="name">'+ t[0] +'</div><div class="section">Section '+ t[1] +' &#8226  '+ t[2] +'</div><div class="line"></div><div class="align quality">Quality of Teaching: <div class="circ">'+ t[3] +'</div></div><div class="align doubts">Quality of Clearing Doubts: <div class="circ">'+ t[4] +'</div></div><div class="align problems">Quality of Problems: <div class="circ">'+ t[5] +'</div></div><div class="other"><div class="f">Other Problems:</div><div class="text">'+ t[6] +'</div></div></div>'
+					$(".data").append(large)
+				}
+			}
+		});
+	</script>
+</body>
+</html>

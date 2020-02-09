@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Feedback Web App
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<form>
+		<div class="mainform">
+			<div class="heading">
+				FEEDBACK FORM 
+			</div>
+			<div class="question">
+				<div class="cont">
+					<div class="qs">Enter Your name:</div>
+					<input type="text" name="name" class="textinput">
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="cont">
+					<div class="qs">Enter Faculty ID:</div>
+					<input type="number" name="Fid" class="textinput">
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="cont radio">
+					<div class="qs">Enter Your Section:</div>
+					<div class="section">
+						<input type="radio" id="A" name="section" value="A" class="radio">
+						<label for="A">A</label>
+						<input type="radio"  id="B"  name="section" value="B" class="radio">
+						<label for="B">B</label>
+						<input type="radio"  id="C"  name="section" value="C" class="radio">
+						<label for="C">C</label>
+						<input type="radio"  id="D"  name="section" value="D" class="radio"> 
+						<label for="D">D</label>
+						<input type="radio"  id="E"  name="section" value="E" class="radio">
+						<label for="E">E</label>
+						<input type="radio"  id="F"  name="section" value="F" class="radio">
+						<label for="F">F</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="cont subject">
+					<div class="qs">Enter Your Subject:</div>
+					<div class="section">
+						<input type="radio" id="Maths" name="subject" value="Maths" class="">
+						<label for="Maths">Maths</label>
+						<input type="radio"  id="Programming"  name="subject" value="Programming" class=""> 
+						<label for="Programming">Programming</label>
+						<input type="radio"  id="Chemistry"  name="subject" value="Chemistry" class="">
+						<label for="Chemistry">Chemistry</label>
+						<input type="radio"  id="Physics"  name="subject" value="Physics" class="">
+						<label for="Physics">Physics</label>
+						<input type="radio"  id="Mechanics"  name="subject" value="Mechanics" class="">
+						<label for="Mechanics">Mechanics</label>
+						<input type="radio"  id="Environmental"  name="subject" value="Environmental" class="">
+						<label for="Environmental">Environmental</label>
+						<input type="radio"  id="Graphics"  name="subject" value="Graphics" class="">
+						<label for="Graphics">Graphics</label>
+						<input type="radio"  id="Electrical"  name="subject" value="Electrical" class="">
+						<label for="Electrical">Electrical</label>
+						<input type="radio"  id="Communication"  name="subject" value="Communication" class="">
+						<label for="Communication">Communication</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="cont quality">
+					<div class="qs">Quality of  Teaching:</div>
+					<div class="section">
+						<input type="radio" id="q1" name="Quality" value="1" class="" >
+						<label for="q1">1</label>
+						<input type="radio"  id="q2"  name="Quality" value="2" class="">
+						<label for="q2">2</label>
+						<input type="radio"  id="q3"  name="Quality" value="3" class="">
+						<label for="q3">3</label>
+						<input type="radio"  id="q4"  name="Quality" value="4" class=""> 
+						<label for="q4">4</label>
+						<input type="radio"  id="q5"  name="Quality" value="5" class="">
+						<label for="q5">5</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="question">
+				<div class="cont doubts">
+					<div class="qs">Quality of  Clearing Doubts:</div>
+					<div class="section">
+						<input type="radio" id="d1" name="Doubts" value="1" class="">
+						<label for="d1">1</label>
+						<input type="radio"  id="d2"  name="Doubts" value="2" class="">
+						<label for="d2">2</label>
+						<input type="radio"  id="d3"  name="Doubts" value="3" class="">
+						<label for="d3">3</label>
+						<input type="radio"  id="d4"  name="Doubts" value="4" class=""> 
+						<label for="d4">4</label>
+						<input type="radio"  id="d5"  name="Doubts" value="5" class="">
+						<label for="d5">5</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="cont Problems">
+					<div class="qs">Quality of Problems:</div>
+					<div class="section">
+						<input type="radio" id="p1" name="Problems" value="1" class="">
+						<label for="p1">1</label>
+						<input type="radio"  id="p2"  name="Problems" value="2" class="">
+						<label for="p2">2</label>
+						<input type="radio"  id="p3"  name="Problems" value="3" class="">
+						<label for="p3">3</label>
+						<input type="radio"  id="p4"  name="Problems" value="4" class=""> 
+						<label for="p4">4</label>
+						<input type="radio"  id="p5"  name="Problems" value="5" class="">
+						<label for="p5">5</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="cont Problems">
+					<div class="qs">Overall Feedback:</div>
+					<div class="section">
+						<textarea id="w3mission" rows="4" cols="50" class="textarea" placeholder="Enter Your Problems Here"></textarea>
+					</div>
+				</div>
+			</div>
+
+			<input type="button" name="" value="Submit" class="submit">
+		</div>
+	</form>	
+
+	<div class="popup">
+		<div class="notif notif1">
+			<div class="qs">Notification</div>
+			<div class="ntext">
+				Please complete the form!!
+			</div>
+			<div class="close c1">
+				Close
+			</div>
+		</div>
+
+		<div class="notif notif2">
+			<div class="qs">Notification</div>
+			<div class="ntext">
+				Thank You For Filling The Form!! 
+			</div>
+			<div class="close c2">
+				Go To Home
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var i = localStorage.getItem("i");
+		console.log(i)
+		if (i==null) {
+			i = 0;
+		}
+		$("input[type='button']").click(function(){
+			v0= $("input[name='name']").val();
+			v1 = $("input[name='section']:checked").val();
+			v2 = $("input[name='subject']:checked").val();
+			v3 = $("input[name='Quality']:checked").val();
+			v4 = $("input[name='Doubts']:checked").val();
+			v5 = $("input[name='Problems']:checked").val();
+			v6 = $(".textarea").val();
+			v7 = $("input[name='Fid']").val();
+			var data = [v0, v1, v2, v3, v4, v5, v6, v7]
+			console.log(data)
+			if (data[0] == null || data[1] == null || data[2] == null || data[3] == null || data[4] == null || data[5] == null || data[7] == null || data[6] == null) 
+			{
+				$(".popup").css({"display": "flex"})
+				$(".notif1").css({"display": "block"})
+				console.log(data)
+			}
+			else{
+				localStorage.setItem("totalData"+i, JSON.stringify(data));
+				var t = localStorage.getItem("totalData"+i);
+				i++
+				localStorage.setItem("i", i);
+				console.log(t)
+				$(".popup").css({"display": "flex"})
+				$(".notif2").css({"display": "block"})
+			}
+		});
+
+		$(".c1").click(function () {
+				$(".popup").css({"display": "none"})
+				$(".notif1").css({"display": "none"})
+		})
+
+		$(".c2").click(function () {
+				window.location.href = "home.html";
+		})
+
+	</script>
+</body>
+</html>
