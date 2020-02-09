@@ -25,7 +25,10 @@ An overview of
 
 ### Team Members
 ----------------------------------
+
 Raghav Mathur - raghav3501@gmail.com
+
 Bikash Kangabam - bikashkangabam2@gmail.com
+
 Ishanuj Barman - ishanujbarman@gmail.com
 
