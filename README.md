@@ -16,7 +16,7 @@ Create a Feedback Web App for Students with respect to Teachers
 
 #### Architecture Diagram
 
-Affix an image of the flow diagram/architecture diagram of the solution
+![Architecture](https://github.com/raghavmathur1/Team-27-Feedback-Web-App/blob/master/Presentation/Architecture.jpg)
 
 #### Technical Description
 
