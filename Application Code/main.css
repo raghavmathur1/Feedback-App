@@ -1,7 +1,8 @@
 body{
-	font-family: poppins;
 	overflow-x: hidden;
 	padding-bottom: 20px;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
 }
 
 .search{
@@ -14,7 +15,6 @@ body{
 }
 
 .data{
-	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -26,6 +26,8 @@ body{
 	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.15);
 	padding: 20px;
 	margin: 20px 0 ;
+	display: flex;
+	flex-direction: column;
 }
 
 .name{
@@ -68,10 +70,10 @@ body{
 .line{
 	margin-left: 30px;
 	width: 50px;
-	height: 2px;
+	height: 3px;
 	margin-top: 5px;
 	margin-bottom: 20px;
-	background: #FB5012;
+	background: #70AE6E;
 }
 
 .circ{
@@ -79,7 +81,7 @@ body{
 	width: 25px;
 	height: 25px;
 	font-size: 16px;
-	border:  2.5px solid #FB5012;
+	border:  2.5px solid #70AE6E;
 	text-align: center;
 	background: #fff;
 	border-radius: 200px;
@@ -93,7 +95,6 @@ body{
 .qedit{
 	flex-direction: column;
 	padding: 30px;
-	margin-left: 25px;
 	position: relative;
 	padding-bottom: 60px
 }
@@ -111,12 +112,31 @@ body{
 	.question{
 		width: 80vw;
 	}
+
+	.feedback{
+		width: 80vw;
+	}
 }
 
 
 @media screen and (max-width: 500px) {
 	.section{
 		justify-content: center;
+		margin-left: 0;
+	}
+
+	.name{
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.feedback{
+
+	}
+
+	.line{
+		margin-right:  auto;
+		margin-left:  auto;
 	}
 
 	.qs{
@@ -130,5 +150,9 @@ body{
 
 	.cont label{
 		font-size: 18px;
+	}
+
+	.align, .f{
+		font-size: 16px;
 	}
 }

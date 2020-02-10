@@ -1,16 +1,16 @@
 ## Team 27 - Feedback Web App
 
-The participants are required to fork this repository and create a public Github repository under their own username (Single repository per team). The following created sections in this README.md need to be duly filled, highlighting the denoted points for the solution/implementation. Please feel free to create further sub-sections in this markdown, the idea is to understand the gist of the components in a singular document.
-
 ### Project Overview
 ----------------------------------
 
-A brief description of 
-* What problem did the team try to solve
-* What is the proposed solution
+### Problem Statement:
+
+Create a Feedback Web App for Students with respect to Teachers
 
 ### Solution Description
-----------------------------------
+
+* Created a form submission function which takes the input data and stores it. 
+* Then this data is used to display the information on another new page.
 
 #### Architecture Diagram
 
@@ -18,10 +18,16 @@ Affix an image of the flow diagram/architecture diagram of the solution
 
 #### Technical Description
 
-An overview of 
-* What technologies/versions were used
-* Setup/Installations required to run the solution
-* Instructions to run the submitted code
+Technology Used
+* HTML
+* CSS
+* JS
+
+### Instructions
+----------------------------------
+* First run index.html and submit a few forms. 
+* Then open main.html and enter the teacher id and all the results of said teacher will appear.
+* Enter 1 to display all feedback (this is just for easy access to all data and wouldnt be in final product).
 
 ### Team Members
 ----------------------------------

@@ -1,13 +1,13 @@
 body{
-	font-family: poppins;
+	font-family: 'Poppins', sans-serif;
 	overflow-x: hidden;
+	margin: 0;
 	padding-bottom: 20px;
 }
 
 .mainform{
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
 	align-items: center;
 	justify-content: center;
 	margin-top: 50px
@@ -39,7 +39,7 @@ body{
 	width:90% ;
 	outline: none;
 	border: 0;
-	border-bottom: 2px solid #FB5012;
+	border-bottom: 3px solid #70AE6E;
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -83,12 +83,12 @@ input[type="radio"] {
 }
 
 .cont label:hover {
-	border-color: #FB5012;
+	border-color: #70AE6E;
 	cursor: pointer;
 }
 
 .cont input[type="radio"]:checked + label {
-	border-color: #FB5012;
+	border-color: #70AE6E;
 }
 
 .subject label{
@@ -114,7 +114,7 @@ input[type="radio"] {
 	width: 100%;
 	resize: none;
 	outline: none;	
-	border:  2px solid #FB5012;
+	border:  3px solid #70AE6E;
 	height: 200px;
 	padding: 20px;
 	font-weight: 500;

@@ -5,6 +5,8 @@
 		Feedback Web App
 	</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -12,8 +14,8 @@
 
 	<div class="search">
 		<div class="heading">
-				FEEDBACKS
-			</div>
+			FEEDBACKS
+		</div>
 		<div class="question qedit">
 			<div class="cont">
 				<div class="qs">Enter Faculty ID To See Feedback</div>
@@ -65,6 +67,15 @@
 					$(".data").append(large)
 				}
 			}
+		});
+
+		$(document).keypress(function(event){
+
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			if(keycode == '13'){
+				alert('You pressed a "enter" key in textbox');	
+			}
+
 		});
 	</script>
 </body>
