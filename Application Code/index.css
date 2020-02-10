@@ -12,6 +12,24 @@ body{
 	justify-content: center;
 	margin-top: 50px
 }
+.links{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.link{
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 20px;
+	
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
 
 .question{
 	margin: 30px 0;
@@ -100,7 +118,6 @@ input[type="radio"] {
 .submit{
 	font-size: 25px;
 	padding:10px 20px;
-	font-family: cera pro;
 	font-weight: 600;
 	background: white;
 	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.15);
@@ -119,6 +136,7 @@ input[type="radio"] {
 	padding: 20px;
 	font-weight: 500;
 	font-size: 18px;
+	font-family: poppins;
 }
 
 .popup{

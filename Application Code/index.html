@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+	<div class="links">
+		<div class="link"><a href="main.html">View Feedbacks</a></div>
+	</div>
 	<form>
 		<div class="mainform">
 			<div class="heading">
@@ -160,7 +163,7 @@
 				Thank You For Filling The Form!! 
 			</div>
 			<div class="close c2">
-				Go To Home
+				Close
 			</div>
 		</div>
 	</div>
@@ -205,7 +208,8 @@
 		})
 
 		$(".c2").click(function () {
-				window.location.href = "home.html";
+				$(".popup").css({"display": "none"})
+				$(".notif2").css({"display": "none"})
 		})
 
 	</script>

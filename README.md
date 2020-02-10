@@ -13,6 +13,7 @@ Create a Feedback Web App for Students with respect to Teachers
 
 * Created a form submission function which takes the input data and stores it. 
 * Then this data is used to display the information on another new page.
+* The  index.html page would be visibly to anyone, while the main.html files would be only accessible by the teachers/faculty for viewing the feedbacks.
 
 #### Architecture Diagram
 
@@ -33,6 +34,7 @@ Technology Used
 * First run index.html and submit a few forms. 
 * Then open main.html and enter the teacher id and all the results of said teacher will appear.
 * Enter 1 to display all feedback (this is just for easy access to all data and wouldnt be in final product).
+* Use Chrome for best experience.
 
 ----------------------------------
 
