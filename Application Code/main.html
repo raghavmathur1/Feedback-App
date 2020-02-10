@@ -25,7 +25,6 @@
 			</div>
 			<div class="note">Enter 1 to see all feedbacks</div>
 		</div>
-
 		<input type="button" name="" value="Submit" class="submit">
 	</div>
 
@@ -72,14 +71,18 @@
 		});
 
 		$(document).keypress(function(event){
-			$(".data").empty()
-			value = $("input[name='Fid']").val();
-			var i = localStorage.getItem("i");
-			for(x = 0; x < i; x++){
-				var t = JSON.parse(localStorage.getItem("totalData"+x));
-				if (t[7]==value || value == 1) {
-					var large = '<div class="feedback"><div class="name">'+ t[0] +'</div><div class="section">Section '+ t[1] +' &#8226  '+ t[2] +'</div><div class="line"></div><div class="align quality">Quality of Teaching: <div class="circ">'+ t[3] +'</div></div><div class="align doubts">Quality of Clearing Doubts: <div class="circ">'+ t[4] +'</div></div><div class="align problems">Quality of Problems: <div class="circ">'+ t[5] +'</div></div><div class="other"><div class="f">Other Problems:</div><div class="text">'+ t[6] +'</div></div></div>'
-					$(".data").append(large)
+
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			if(keycode == '13'){
+				$(".data").empty()
+				value = $("input[name='Fid']").val();
+				var i = localStorage.getItem("i");
+				for(x = 0; x < i; x++){
+					var t = JSON.parse(localStorage.getItem("totalData"+x));
+					if (t[7]==value || value == 1) {
+						var large = '<div class="feedback"><div class="name">'+ t[0] +'</div><div class="section">Section '+ t[1] +' &#8226  '+ t[2] +'</div><div class="line"></div><div class="align quality">Quality of Teaching: <div class="circ">'+ t[3] +'</div></div><div class="align doubts">Quality of Clearing Doubts: <div class="circ">'+ t[4] +'</div></div><div class="align problems">Quality of Problems: <div class="circ">'+ t[5] +'</div></div><div class="other"><div class="f">Other Problems:</div><div class="text">'+ t[6] +'</div></div></div>'
+						$(".data").append(large)
+					}
 				}
 			}
 		});

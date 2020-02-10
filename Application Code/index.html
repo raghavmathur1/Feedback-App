@@ -203,15 +203,47 @@
 		});
 
 		$(".c1").click(function () {
-				$(".popup").css({"display": "none"})
-				$(".notif1").css({"display": "none"})
+			$(".popup").css({"display": "none"})
+			$(".notif1").css({"display": "none"})
 		})
 
 		$(".c2").click(function () {
-				$(".popup").css({"display": "none"})
-				$(".notif2").css({"display": "none"})
+			$(".popup").css({"display": "none"})
+			$(".notif2").css({"display": "none"})
 		})
 
+		$(document).keypress(function(event){
+
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			if(keycode == '13'){
+				v0= $("input[name='name']").val();
+				v1 = $("input[name='section']:checked").val();
+				v2 = $("input[name='subject']:checked").val();
+				v3 = $("input[name='Quality']:checked").val();
+				v4 = $("input[name='Doubts']:checked").val();
+				v5 = $("input[name='Problems']:checked").val();
+				v6 = $(".textarea").val();
+				v7 = $("input[name='Fid']").val();
+				var data = [v0, v1, v2, v3, v4, v5, v6, v7]
+				console.log(data)
+				if (data[0] == null || data[1] == null || data[2] == null || data[3] == null || data[4] == null || data[5] == null || data[7] == null || data[6] == null) 
+				{
+					$(".popup").css({"display": "flex"})
+					$(".notif1").css({"display": "block"})
+					console.log(data)
+				}
+				else{
+					localStorage.setItem("totalData"+i, JSON.stringify(data));
+					var t = localStorage.getItem("totalData"+i);
+					i++
+					localStorage.setItem("i", i);
+					console.log(t)
+					$(".popup").css({"display": "flex"})
+					$(".notif2").css({"display": "block"})
+				}
+			}
+
+		});
 	</script>
 </body>
 </html>
